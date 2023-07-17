@@ -1,0 +1,96 @@
+/* ==========================================================================
+   José Carlos Gómez Gómez
+   ========================================================================== */
+/* navbar */
+.navbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.navbar-brand {
+  left: 15px;
+  top: 8px;
+  font-weight: bold;
+}
+
+.dropdown-item-movil{
+  text-align: right !important;
+  margin-left: 1em;
+}
+
+.navbar-toggler-icon {
+  background-color: black;
+}
+
+.dropdown-menu {
+  margin-left: -7em !important;
+  min-width: 7rem;
+}
+
+.carousel-item img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* carrusel */
+#carouselExampleIndicators .carousel-item .imgCarrusel {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Contenido principal del index */
+#contenedorPrincipal {
+  width: 100%;
+  height: 100%;
+  background: rgb(13,92,168);
+  background: linear-gradient(188deg, rgba(13,92,168,1) 4%, rgba(134,18,175,1) 29%, rgba(87,227,255,1) 96%);
+}
+
+#contenedorPrincipal .container {
+  padding-bottom: 10em;
+}
+
+#contenedorPrincipal .linkTexto{
+  color: black;
+}
+
+#contenedorPrincipal .linkTexto:hover{
+  text-decoration: none;
+}
+
+#contenedorPrincipal .card {
+  margin-bottom: 20px;
+  margin-top: 4em;
+}
+
+#contenedorPrincipal .card-title,
+#contenedorPrincipal .card-text{
+  text-align: center;
+}
+
+/* Pie del index */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  padding: 10px;
+  text-align: center;
+  background-color: #f8f9fa;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+  color: white;
+}

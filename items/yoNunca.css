@@ -1,0 +1,37 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: rgb(160,28,207);
+  background: linear-gradient(110deg, rgba(160,28,207,1) 0%, rgba(113,207,252,1) 57%, rgba(181,100,201,1) 73%, rgba(13,92,168,1) 100%, rgba(13,92,168,1) 100%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2em;
+}
+
+/* modificación del juego comprende todo el juego*/
+#yoNunca #modificarJuego {
+  display: none;
+}
+
+#yoNunca #filaFrase {
+  height: 4em;
+}
+
+/* Clases generales que han sido tocadas del juego*/
+#yoNunca .row {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+#yoNunca #modificarJuego label {
+  text-align: center;
+}
+
+#yoNunca .btn {
+  margin-bottom: 2em;
+}

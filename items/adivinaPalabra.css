@@ -1,0 +1,72 @@
+body {
+  height: 100vh;
+  background: rgb(160, 28, 207);
+  background: linear-gradient(110deg, rgba(160, 28, 207, 1) 0%, rgba(113, 207, 252, 1) 57%, rgba(181, 100, 201, 1) 73%, rgba(13, 92, 168, 1) 100%, rgba(13, 92, 168, 1) 100%);
+}
+
+/* Juego comprende el inicio*/
+#adivinaPalabra #letras-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#adivinaPalabra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  padding-bottom: 6em;
+}
+
+/* Inicio del juego comprende los botones para elegir la dificultad */
+#adivinaPalabra .btn-dificultad {
+  margin: 2em;
+  width: 10em;
+  height: 7em;
+}
+
+
+/* modificación del juego comprende todo el juego*/
+#adivinaPalabra #modificarJuego {
+  display: none;
+  width: 22em;
+}
+
+#adivinaPalabra #colPistaPalabra {
+  height: 2em;
+}
+
+#adivinaPalabra #letras {
+  margin-top: 1.5em;
+  text-align: center;
+  padding: 2em;
+}
+
+#adivinaPalabra .underline {
+  display: inline-block;
+  width: 1rem;
+  border-bottom: 2px solid black;
+  margin-right: 5px;
+  text-align: center;
+}
+
+#adivinaPalabra #inputPalabraUsuario {
+  text-align: center;
+  width: 22em;
+}
+
+#adivinaPalabra .inputRespuesta {
+  position: relative;
+  height: 2em;
+}
+
+/* Clases generales que han sido tocadas del juego*/
+#adivinaPalabra .row {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+#adivinaPalabra #modificarJuego label {
+  text-align: center;
+}

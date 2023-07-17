@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAMESCAPE</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="adivinaPalabra.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="adivinaPalabra.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="../index.html">GAMESCAPE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuItems" aria-controls="menuItems" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="menuItems">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link dropdown-item-movil" href="yoNunca.html">Yo nunca</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link dropdown-item-movil" href="adivinaPalabra.html">Adivina la palabra</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container" id="adivinaPalabra">
+    <div class="row">
+      <div class="col-12">
+        <h1>Adivina la palabra</h1>
+      </div>
+    </div>
+
+    <div id="inicioJuego" class="row">
+      <h3 id="botonesTitulo" class="col-12">Escoge una dificultad:</h3>
+      <div id="botones" class="col-12">
+        <button class="btn btn-primary btn-dificultad" data-dificultad="facil">Fácil</button>
+        <button class="btn btn-primary btn-dificultad" data-dificultad="media">Media</button>
+        <button class="btn btn-primary btn-dificultad" data-dificultad="dificil">Difícil</button>
+      </div>
+    </div>
+
+    <div id="modificarJuego">
+      <div class="row">
+        <div class="form-group col-12">
+          <label for="dificultad">Dificultad seleccionada:</label>
+          <select class="form-control" id="dificultad">
+            <option value="facil">Fácil</option>
+            <option value="media">Media</option>
+            <option value="dificil">Difícil</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="letras-container" class="row">
+        <div class="col-12">
+          <input type="text" id="inputPalabra" class="form-control" hidden>
+          <span>Pista:</span>
+        </div>
+        <div id="colPistaPalabra" class="col-12">
+          <span id="pistaPalabra" disabled></span>
+        </div>
+        <div class="col-12">
+          <div id="letras">
+            <!-- Los span con las letras se agregarán aquí dinámicamente -->
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <input type="text" id="inputPalabraUsuario" class="form-control" placeholder="Escribe tu respuesta aquí">
+        </div>
+      </div>
+
+      <div class="row inputRespuesta">
+        <div class="col-12">
+          <span type="text" id="inputRespuesta" disabled>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div>
+            <button id="btn-introducir" class="btn btn-primary">Introducir</button>
+            <button id="btn-otraPalabra" class="btn btn-secondary">Otra palabra</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <footer class="bg-dark">
+    <p>Todos los derechos reservados a GAMESCAPE | COPYRIGHT 2023 | Correo: gamescape23@gmail.com</p>
+  </footer>
+</body>
+
+</html>
