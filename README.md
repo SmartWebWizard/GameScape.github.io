@@ -1,2 +1,2 @@
 # GameScape.github.io
-Página web con varios juegos
+Página web con el juego adivina la palabra
